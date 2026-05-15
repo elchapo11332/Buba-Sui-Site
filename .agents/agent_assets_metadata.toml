@@ -24,3 +24,9 @@ id = "0NGtYikpxJufqR0ybmcYM"
 uri = "file://buba-flat.zip"
 type = "unspecified"
 title = "BUBA — All Files Flat (Fixed)"
+
+[[outputs]]
+id = "vdcWgAmqYQkGgameaL0rz"
+uri = "file://buba-single.zip"
+type = "unspecified"
+title = "BUBA — Single index.html (all in one)"
