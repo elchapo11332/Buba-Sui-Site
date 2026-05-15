@@ -20,7 +20,7 @@ function JumpingText({ text, className, baseDelay = 0 }: { text: string; classNa
               delay: baseDelay + i * 0.07,
               repeat: Infinity,
               repeatDelay: 2.2,
-              ease: "easeInOut",
+              ease: "easeInOut" as const,
             }}
           >
             {ch}
@@ -91,7 +91,7 @@ export default function Home() {
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } },
   };
 
   const stagger = {
