@@ -18,3 +18,9 @@ id = "1ic_UUQ7jfbyTN13BC1Hu"
 uri = "file://buba-cloudflare.zip"
 type = "unspecified"
 title = "BUBA — Fixed & Ready for Cloudflare Pages"
+
+[[outputs]]
+id = "0NGtYikpxJufqR0ybmcYM"
+uri = "file://buba-flat.zip"
+type = "unspecified"
+title = "BUBA — All Files in One Folder"
