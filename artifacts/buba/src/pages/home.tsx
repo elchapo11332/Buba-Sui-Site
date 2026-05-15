@@ -117,7 +117,7 @@ export default function Home() {
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
               <a href="#buy" className="neon-border px-7 py-3 md:px-10 md:py-4 bg-background font-display font-black text-base md:text-lg tracking-widest uppercase hover:scale-105 transition-transform">
-                Enter the Lair
+                BUY $BUBA
               </a>
               <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/20 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors box-glow-blue hover:border-secondary text-secondary">
                 <FaTwitter size={20} />
