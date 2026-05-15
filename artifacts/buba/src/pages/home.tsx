@@ -119,10 +119,10 @@ export default function Home() {
               <a href="#buy" className="neon-border px-7 py-3 md:px-10 md:py-4 bg-background font-display font-black text-base md:text-lg tracking-widest uppercase hover:scale-105 transition-transform">
                 BUY $BUBA
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/20 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors box-glow-blue hover:border-secondary text-secondary">
+              <a href="https://x.com/bubaonsui" target="_blank" rel="noreferrer" className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/20 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors box-glow-blue hover:border-secondary text-secondary">
                 <FaTwitter size={20} />
               </a>
-              <a href="https://telegram.org" target="_blank" rel="noreferrer" className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/20 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors box-glow-blue hover:border-secondary text-secondary">
+              <a href="https://t.me/bubi_on_sui" target="_blank" rel="noreferrer" className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/20 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors box-glow-blue hover:border-secondary text-secondary">
                 <FaTelegramPlane size={20} />
               </a>
             </motion.div>
@@ -295,8 +295,8 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-xl md:text-2xl font-display font-bold text-primary mb-6 text-glow-gold">BUBA</h2>
           <div className="flex justify-center gap-6 mb-6">
-            <a href="https://twitter.com" className="text-muted-foreground hover:text-secondary transition-colors"><FaTwitter size={28} /></a>
-            <a href="https://telegram.org" className="text-muted-foreground hover:text-secondary transition-colors"><FaTelegramPlane size={28} /></a>
+            <a href="https://x.com/bubaonsui" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-secondary transition-colors"><FaTwitter size={28} /></a>
+            <a href="https://t.me/bubi_on_sui" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-secondary transition-colors"><FaTelegramPlane size={28} /></a>
           </div>
           <p className="text-xs md:text-sm text-muted-foreground max-w-sm mx-auto">© {new Date().getFullYear()} BUBA. All rights reserved. This is a meme coin. It has no intrinsic value. Do your own research.</p>
         </div>
