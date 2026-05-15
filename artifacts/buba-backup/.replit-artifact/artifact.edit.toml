@@ -2,7 +2,7 @@ kind = "web"
   previewPath = "/"
   title = "BUBA Token (Backup)"
   version = "1.0.0"
-  id = "artifacts/buba-backup"
+  id = "artifacts/buba"
   router = "path"
 
   [[integratedSkills]]
