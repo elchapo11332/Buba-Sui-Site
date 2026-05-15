@@ -87,7 +87,7 @@ export default function Home() {
           <a href="#roadmap" className="text-sm font-semibold hover:text-accent transition-colors uppercase tracking-wide">Roadmap</a>
           <a href="#how-to-buy" className="text-sm font-semibold hover:text-accent transition-colors uppercase tracking-wide">Portal</a>
         </div>
-        <a href="#buy" className="neon-border px-4 py-1.5 md:px-6 md:py-2 bg-background font-display font-bold text-xs md:text-sm tracking-wider uppercase">
+        <a href="https://moonbags.io/bondingcurve/coins/buba-sui-LUgGUtXkpk" target="_blank" rel="noreferrer" className="neon-border px-4 py-1.5 md:px-6 md:py-2 bg-background font-display font-bold text-xs md:text-sm tracking-wider uppercase">
           Buy BUBA
         </a>
       </nav>
@@ -120,7 +120,7 @@ export default function Home() {
               Cast spells. Stack bags. Embrace the weird.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
-              <a href="#buy" className="neon-border px-7 py-3 md:px-10 md:py-4 bg-background font-display font-black text-base md:text-lg tracking-widest uppercase hover:scale-105 transition-transform">
+              <a href="https://moonbags.io/bondingcurve/coins/buba-sui-LUgGUtXkpk" target="_blank" rel="noreferrer" className="neon-border px-7 py-3 md:px-10 md:py-4 bg-background font-display font-black text-base md:text-lg tracking-widest uppercase hover:scale-105 transition-transform">
                 BUY $BUBA
               </a>
               <a href="https://x.com/bubaonsui" target="_blank" rel="noreferrer" className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/20 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors box-glow-blue hover:border-secondary text-secondary">
@@ -140,7 +140,7 @@ export default function Home() {
           <div className="whitespace-nowrap flex animate-[marquee_20s_linear_infinite]">
             {[...Array(5)].map((_, i) => (
               <span key={i} className="text-xs md:text-base font-mono font-bold mx-6 md:mx-8 inline-flex items-center gap-3">
-                SUI CONTRACT: <span className="bg-black/20 px-2 py-0.5 rounded">0xPlaceholderContractAddressHere123456789</span>
+                SUI CONTRACT: <span className="bg-black/20 px-2 py-0.5 rounded">0xf2794aabda8a49d40d56abce4c550fa36495f5b406376f920765eb46e2721288::bub::BUB</span>
                 <span className="text-lg ml-2">✦</span>
               </span>
             ))}
