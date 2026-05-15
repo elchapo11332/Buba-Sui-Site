@@ -30,3 +30,9 @@ id = "vdcWgAmqYQkGgameaL0rz"
 uri = "file://buba-single.zip"
 type = "unspecified"
 title = "BUBA — Single index.html (all in one)"
+
+[[outputs]]
+id = "Il_bdrF39T0no5Gnwk4o6"
+uri = "file://buba-deploy.zip"
+type = "unspecified"
+title = "BUBA — Ready to Deploy"
