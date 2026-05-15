@@ -183,7 +183,7 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="mb-6 md:mb-16 p-6 md:p-10 rounded-3xl border border-primary/40 bg-card/40 backdrop-blur-md box-glow-gold text-center">
             <h3 className="text-sm md:text-xl font-display text-muted-foreground mb-3 uppercase tracking-widest">Total Supply</h3>
             <div className="font-black font-display text-primary text-glow-gold leading-none" style={{ fontSize: "clamp(1.75rem, 7vw, 4rem)", letterSpacing: "-0.02em" }}>
-              1,000,000,000
+              1B
             </div>
             <p className="mt-3 text-sm md:text-lg uppercase tracking-[0.3em] text-primary/60 font-bold">BUBA Tokens</p>
           </motion.div>
