@@ -118,7 +118,7 @@ export default function Home() {
             variants={stagger}
             className="flex flex-col items-center"
           >
-            <motion.h1 variants={fadeInUp} className="text-7xl md:text-9xl font-black font-display tracking-tighter text-glow-gold mb-4 text-primary leading-none">
+            <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-black font-display tracking-tighter text-glow-gold mb-4 text-primary leading-none">
               BUBA
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-medium mb-10 leading-relaxed">
@@ -167,7 +167,7 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div variants={fadeInUp} className="flex flex-col gap-6">
-              <h2 className="text-5xl md:text-6xl font-display font-bold text-glow-blue text-secondary leading-none">Chaotic Energy. Pure Magic.</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-glow-blue text-secondary leading-none">Chaotic Energy. Pure Magic.</h2>
               <div className="h-1 w-24 bg-gradient-to-r from-secondary to-accent" />
               <p className="text-xl text-muted-foreground leading-relaxed">
                 BUBA isn't just another bug. BUBA is an enlightened entity traversing the cosmic web of the SUI blockchain, brewing potions of unhinged volatility and whispering forbidden alpha to those who dare listen.
@@ -185,14 +185,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30 pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-20">
-            <h2 className="text-6xl font-display font-bold text-glow-gold text-primary mb-6">The Sacred Numbers</h2>
+            <h2 className="text-4xl font-display font-bold text-glow-gold text-primary mb-6">The Sacred Numbers</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">No tricks, no hidden spells. Just raw, unfiltered tokenomics designed for the true initiates.</p>
           </motion.div>
 
           {/* Total Supply — Hero Number */}
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="mb-16 p-10 rounded-3xl border border-primary/40 bg-card/40 backdrop-blur-md box-glow-gold text-center">
             <h3 className="text-xl font-display text-muted-foreground mb-4 uppercase tracking-widest">Total Supply</h3>
-            <div className="font-black font-display text-primary text-glow-gold leading-none" style={{ fontSize: "clamp(3rem, 10vw, 7rem)", letterSpacing: "-0.02em" }}>
+            <div className="font-black font-display text-primary text-glow-gold leading-none" style={{ fontSize: "clamp(2rem, 6vw, 4rem)", letterSpacing: "-0.02em" }}>
               1,000,000,000
             </div>
             <p className="mt-4 text-lg uppercase tracking-[0.3em] text-primary/60 font-bold">BUBA Tokens</p>
@@ -201,13 +201,13 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-10 rounded-2xl border border-secondary/30 bg-card/50 backdrop-blur-md box-glow-blue text-center group hover:-translate-y-2 transition-transform duration-300">
               <h3 className="text-xl font-display text-muted-foreground mb-4 uppercase tracking-widest">Taxes</h3>
-              <div className="font-black font-display text-secondary text-glow-blue leading-none" style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}>0 / 0</div>
+              <div className="font-black font-display text-secondary text-glow-blue leading-none" style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}>0 / 0</div>
               <p className="mt-4 text-sm uppercase tracking-widest text-secondary/60 font-bold">Buy &amp; Sell Tax</p>
             </motion.div>
 
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-10 rounded-2xl border border-accent/30 bg-card/50 backdrop-blur-md shadow-[0_0_20px_hsl(120,100%,50%,0.2)] text-center group hover:-translate-y-2 transition-transform duration-300">
               <h3 className="text-xl font-display text-muted-foreground mb-4 uppercase tracking-widest">Liquidity</h3>
-              <div className="font-black font-display text-accent leading-none" style={{ fontSize: "clamp(3rem, 8vw, 6rem)", textShadow: '0 0 30px hsl(120 100% 50% / 0.6)' }}>BURNED</div>
+              <div className="font-black font-display text-accent leading-none" style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", textShadow: '0 0 30px hsl(120 100% 50% / 0.6)' }}>BURNED</div>
               <p className="mt-4 text-sm uppercase tracking-widest text-accent/60 font-bold">Forever Locked</p>
             </motion.div>
           </div>
@@ -220,7 +220,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-secondary/15 blur-[150px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-20">
-            <h2 className="text-6xl font-display font-bold text-glow-gold text-primary mb-6">The Quest Ahead</h2>
+            <h2 className="text-4xl font-display font-bold text-glow-gold text-primary mb-6">The Quest Ahead</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">The wizard has consulted the ancient scrolls. The path to glory is written in gold.</p>
           </motion.div>
 
@@ -305,7 +305,7 @@ export default function Home() {
       <footer className="py-12 border-t border-white/10 relative overflow-hidden">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-32 bg-primary/10 blur-[100px] rounded-[100%] pointer-events-none" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl font-display font-bold text-primary mb-8 text-glow-gold">BUBA</h2>
+          <h2 className="text-2xl font-display font-bold text-primary mb-8 text-glow-gold">BUBA</h2>
           <div className="flex justify-center gap-6 mb-8">
             <a href="https://twitter.com" className="text-muted-foreground hover:text-secondary transition-colors"><FaTwitter size={32} /></a>
             <a href="https://telegram.org" className="text-muted-foreground hover:text-secondary transition-colors"><FaTelegramPlane size={32} /></a>
