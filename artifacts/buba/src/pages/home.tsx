@@ -215,7 +215,7 @@ export default function Home() {
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="flex justify-center order-2 lg:order-1">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="flex justify-center">
               <div className="relative w-full max-w-sm mx-auto">
                 <div className="absolute inset-0 bg-primary/20 blur-[80px] rounded-full mix-blend-screen" />
                 <img
@@ -227,7 +227,7 @@ export default function Home() {
               </div>
             </motion.div>
 
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="flex flex-col gap-4 md:gap-6 order-1 lg:order-2">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="flex flex-col gap-4 md:gap-6">
               {[
                 {
                   phase: "Phase 1",
