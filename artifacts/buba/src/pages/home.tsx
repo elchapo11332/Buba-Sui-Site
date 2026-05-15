@@ -109,8 +109,23 @@ export default function Home() {
           </motion.div>
 
           <motion.div initial="hidden" animate="visible" variants={stagger} className="flex flex-col items-center">
-            <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl md:text-7xl font-black font-display tracking-wide text-glow-gold mb-3 md:mb-4 text-primary leading-none">
-              BUBA
+            <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl md:text-7xl font-black font-display tracking-wide text-glow-gold mb-3 md:mb-4 text-primary leading-none flex items-end gap-1 md:gap-2">
+              {["B","U","B","A"].map((letter, i) => (
+                <motion.span
+                  key={i}
+                  animate={{ y: [0, -28, 4, -14, 2, 0] }}
+                  transition={{
+                    duration: 0.7,
+                    delay: i * 0.15,
+                    repeat: Infinity,
+                    repeatDelay: 1.6,
+                    ease: "easeInOut",
+                  }}
+                  className="inline-block"
+                >
+                  {letter}
+                </motion.span>
+              ))}
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-base md:text-xl text-muted-foreground max-w-xl mx-auto font-medium mb-8 md:mb-10 leading-relaxed px-2">
               The Chaotic Good Wizard of the SUI Blockchain. Cast spells. Stack bags. Embrace the weird.
