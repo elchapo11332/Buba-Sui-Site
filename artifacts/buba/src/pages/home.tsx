@@ -109,7 +109,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div initial="hidden" animate="visible" variants={stagger} className="flex flex-col items-center">
-            <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl md:text-7xl font-black font-display tracking-tighter text-glow-gold mb-3 md:mb-4 text-primary leading-none">
+            <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl md:text-7xl font-black font-display tracking-wide text-glow-gold mb-3 md:mb-4 text-primary leading-none">
               BUBA
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-base md:text-xl text-muted-foreground max-w-xl mx-auto font-medium mb-8 md:mb-10 leading-relaxed px-2">
