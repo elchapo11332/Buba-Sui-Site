@@ -4,32 +4,6 @@ import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
 import bubaLogo from "@assets/IMG_8916_1778859271618.PNG";
 import roadmapImg from "@assets/photo_2026-05-15_17-34-19_1778859579465.jpg";
 
-function JumpingText({ text, className, baseDelay = 0 }: { text: string; className?: string; baseDelay?: number }) {
-  return (
-    <span className={`inline-flex flex-wrap items-end ${className ?? ""}`}>
-      {text.split("").map((ch, i) =>
-        ch === " " ? (
-          <span key={i} style={{ display: "inline-block", width: "0.3em" }} />
-        ) : (
-          <motion.span
-            key={i}
-            className="inline-block"
-            animate={{ y: [0, -20, 3, -10, 1, 0] }}
-            transition={{
-              duration: 0.6,
-              delay: baseDelay + i * 0.07,
-              repeat: Infinity,
-              repeatDelay: 2.2,
-              ease: "easeInOut" as const,
-            }}
-          >
-            {ch}
-          </motion.span>
-        )
-      )}
-    </span>
-  );
-}
 
 const ParticleBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -137,13 +111,13 @@ export default function Home() {
 
           <motion.div initial="hidden" animate="visible" variants={stagger} className="flex flex-col items-center">
             <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl md:text-7xl font-black font-display tracking-wide text-glow-gold mb-3 md:mb-4 text-primary leading-none">
-              <JumpingText text="BUBA" baseDelay={0} />
+              BUBA
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-base md:text-xl text-muted-foreground max-w-xl mx-auto font-medium mb-2 leading-relaxed px-2">
-              <JumpingText text="The Chaotic Good Wizard of the SUI Blockchain." baseDelay={0.3} />
+              The Chaotic Good Wizard of the SUI Blockchain.
             </motion.p>
             <motion.p variants={fadeInUp} className="text-base md:text-xl text-muted-foreground max-w-xl mx-auto font-medium mb-8 md:mb-10 leading-relaxed px-2">
-              <JumpingText text="Cast spells. Stack bags. Embrace the weird." baseDelay={0.5} />
+              Cast spells. Stack bags. Embrace the weird.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
               <a href="#buy" className="neon-border px-7 py-3 md:px-10 md:py-4 bg-background font-display font-black text-base md:text-lg tracking-widest uppercase hover:scale-105 transition-transform">
@@ -189,7 +163,7 @@ export default function Home() {
             </motion.div>
             <motion.div variants={fadeInUp} className="flex flex-col gap-4 md:gap-6">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-glow-blue text-secondary leading-tight">
-                <JumpingText text="Chaotic Energy. Pure Magic." baseDelay={0} />
+                Chaotic Energy. Pure Magic.
               </h2>
               <div className="h-1 w-24 bg-gradient-to-r from-secondary to-accent" />
               <p className="text-base md:text-xl text-muted-foreground leading-relaxed">
@@ -209,7 +183,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-10 md:mb-20">
             <h2 className="text-2xl md:text-4xl font-display font-bold text-glow-gold text-primary mb-4">
-              <JumpingText text="The Sacred Numbers" baseDelay={0} />
+              The Sacred Numbers
             </h2>
             <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto">No tricks, no hidden spells. Just raw, unfiltered tokenomics designed for the true initiates.</p>
           </motion.div>
@@ -217,7 +191,7 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="mb-6 md:mb-16 p-6 md:p-10 rounded-3xl border border-primary/40 bg-card/40 backdrop-blur-md box-glow-gold text-center">
             <h3 className="text-sm md:text-xl font-display text-muted-foreground mb-3 uppercase tracking-widest">Total Supply</h3>
             <div className="font-black font-display text-primary text-glow-gold leading-none text-5xl md:text-7xl">
-              <JumpingText text="1B" baseDelay={0} />
+              1B
             </div>
             <p className="mt-3 text-sm md:text-lg uppercase tracking-[0.3em] text-primary/60 font-bold">BUBA Tokens</p>
           </motion.div>
@@ -226,7 +200,7 @@ export default function Home() {
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-6 md:p-10 rounded-2xl border border-secondary/30 bg-card/50 backdrop-blur-md box-glow-blue text-center group hover:-translate-y-2 transition-transform duration-300">
               <h3 className="text-sm md:text-xl font-display text-muted-foreground mb-3 uppercase tracking-widest">Taxes</h3>
               <div className="font-black font-display text-secondary text-glow-blue leading-none text-4xl md:text-6xl">
-                <JumpingText text="0/0" baseDelay={0} />
+                0/0
               </div>
               <p className="mt-3 text-xs md:text-sm uppercase tracking-widest text-secondary/60 font-bold">Buy &amp; Sell Tax</p>
             </motion.div>
@@ -234,7 +208,7 @@ export default function Home() {
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-6 md:p-10 rounded-2xl border border-accent/30 bg-card/50 backdrop-blur-md shadow-[0_0_20px_hsl(120,100%,50%,0.2)] text-center group hover:-translate-y-2 transition-transform duration-300">
               <h3 className="text-sm md:text-xl font-display text-muted-foreground mb-3 uppercase tracking-widest">Liquidity</h3>
               <div className="font-black font-display text-accent leading-none text-4xl md:text-6xl" style={{ textShadow: '0 0 30px hsl(120 100% 50% / 0.6)' }}>
-                <JumpingText text="BURNED" baseDelay={0} />
+                BURNED
               </div>
               <p className="mt-3 text-xs md:text-sm uppercase tracking-widest text-accent/60 font-bold">Forever Locked</p>
             </motion.div>
@@ -249,7 +223,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-10 md:mb-20">
             <h2 className="text-2xl md:text-4xl font-display font-bold text-glow-gold text-primary mb-4">
-              <JumpingText text="The Quest Ahead" baseDelay={0} />
+              The Quest Ahead
             </h2>
             <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto">The wizard has consulted the ancient scrolls. The path to glory is written in gold.</p>
           </motion.div>
@@ -283,7 +257,7 @@ export default function Home() {
                     <span className={`text-xs font-bold uppercase tracking-widest px-2 py-1 rounded-full border ${phase.border} text-${phase.color}`}>{phase.phase}</span>
                     {phase.done && <span className="text-xs font-bold uppercase tracking-widest px-2 py-1 rounded-full bg-primary/20 text-primary border border-primary/30">LIVE</span>}
                     <h3 className={`text-base md:text-xl font-display font-bold text-${phase.color}`}>
-                      <JumpingText text={phase.title} baseDelay={0} />
+                      {phase.title}
                     </h3>
                   </div>
                   <ul className="grid grid-cols-2 gap-1.5 md:gap-2">
@@ -306,7 +280,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-32 bg-primary/10 blur-[100px] rounded-[100%] pointer-events-none" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-xl md:text-2xl font-display font-bold text-primary mb-6 text-glow-gold">
-            <JumpingText text="BUBA" baseDelay={0} />
+            BUBA
           </h2>
           <div className="flex justify-center gap-6 mb-6">
             <a href="https://x.com/bubaonsui" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-secondary transition-colors"><FaTwitter size={28} /></a>
