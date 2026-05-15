@@ -86,6 +86,7 @@ export default function Home() {
           <a href="#tokenomics" className="text-sm font-semibold hover:text-secondary transition-colors uppercase tracking-wide">Maths</a>
           <a href="#roadmap" className="text-sm font-semibold hover:text-accent transition-colors uppercase tracking-wide">Roadmap</a>
           <a href="#how-to-buy" className="text-sm font-semibold hover:text-accent transition-colors uppercase tracking-wide">Portal</a>
+          <a href="/whitepaper.html" target="_blank" rel="noreferrer" className="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-wide">Whitepaper</a>
         </div>
         <a href="https://moonbags.io/bondingcurve/coins/buba-sui-LUgGUtXkpk" target="_blank" rel="noreferrer" className="neon-border px-4 py-1.5 md:px-6 md:py-2 bg-background font-display font-bold text-xs md:text-sm tracking-wider uppercase">
           Buy BUBA
