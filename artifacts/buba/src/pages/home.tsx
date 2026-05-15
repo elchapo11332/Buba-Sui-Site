@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
 import bubaLogo from "@assets/IMG_8916_1778859271618.PNG";
+import roadmapImg from "@assets/photo_2026-05-15_17-34-19_1778859579465.jpg";
 
 const ParticleBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -84,6 +85,7 @@ export default function Home() {
         <div className="hidden md:flex items-center gap-8">
           <a href="#about" className="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-wide">Lore</a>
           <a href="#tokenomics" className="text-sm font-semibold hover:text-secondary transition-colors uppercase tracking-wide">Maths</a>
+          <a href="#roadmap" className="text-sm font-semibold hover:text-accent transition-colors uppercase tracking-wide">Roadmap</a>
           <a href="#how-to-buy" className="text-sm font-semibold hover:text-accent transition-colors uppercase tracking-wide">Portal</a>
         </div>
         <a href="#buy" className="neon-border px-6 py-2 bg-background font-display font-bold text-sm tracking-wider uppercase">
@@ -187,23 +189,113 @@ export default function Home() {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">No tricks, no hidden spells. Just raw, unfiltered tokenomics designed for the true initiates.</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-8 rounded-2xl border border-primary/30 bg-card/50 backdrop-blur-md box-glow-gold text-center group hover:-translate-y-2 transition-transform duration-300">
-              <h3 className="text-2xl font-display text-muted-foreground mb-4">Total Supply</h3>
-              <div className="text-5xl font-black font-mono text-primary text-glow-gold">1,000,000,000</div>
-              <p className="mt-4 text-sm uppercase tracking-widest text-primary/60 font-bold">BUBA Tokens</p>
-            </motion.div>
-            
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-8 rounded-2xl border border-secondary/30 bg-card/50 backdrop-blur-md box-glow-blue text-center group hover:-translate-y-2 transition-transform duration-300 delay-100">
-              <h3 className="text-2xl font-display text-muted-foreground mb-4">Taxes</h3>
-              <div className="text-5xl font-black font-mono text-secondary text-glow-blue">0/0</div>
-              <p className="mt-4 text-sm uppercase tracking-widest text-secondary/60 font-bold">Buy & Sell Tax</p>
+          {/* Total Supply — Hero Number */}
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="mb-16 p-10 rounded-3xl border border-primary/40 bg-card/40 backdrop-blur-md box-glow-gold text-center">
+            <h3 className="text-xl font-display text-muted-foreground mb-4 uppercase tracking-widest">Total Supply</h3>
+            <div className="font-black font-display text-primary text-glow-gold leading-none" style={{ fontSize: "clamp(3rem, 10vw, 7rem)", letterSpacing: "-0.02em" }}>
+              1,000,000,000
+            </div>
+            <p className="mt-4 text-lg uppercase tracking-[0.3em] text-primary/60 font-bold">BUBA Tokens</p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-10 rounded-2xl border border-secondary/30 bg-card/50 backdrop-blur-md box-glow-blue text-center group hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-xl font-display text-muted-foreground mb-4 uppercase tracking-widest">Taxes</h3>
+              <div className="font-black font-display text-secondary text-glow-blue leading-none" style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}>0 / 0</div>
+              <p className="mt-4 text-sm uppercase tracking-widest text-secondary/60 font-bold">Buy &amp; Sell Tax</p>
             </motion.div>
 
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-8 rounded-2xl border border-accent/30 bg-card/50 backdrop-blur-md shadow-[0_0_20px_hsl(120,100%,50%,0.2)] text-center group hover:-translate-y-2 transition-transform duration-300 delay-200">
-              <h3 className="text-2xl font-display text-muted-foreground mb-4">Liquidity</h3>
-              <div className="text-5xl font-black font-mono text-accent" style={{ textShadow: '0 0 20px hsl(120 100% 50% / 0.5)'}}>BURNED</div>
-              <p className="mt-4 text-sm uppercase tracking-widest text-accent/60 font-bold">Forever locked</p>
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="p-10 rounded-2xl border border-accent/30 bg-card/50 backdrop-blur-md shadow-[0_0_20px_hsl(120,100%,50%,0.2)] text-center group hover:-translate-y-2 transition-transform duration-300">
+              <h3 className="text-xl font-display text-muted-foreground mb-4 uppercase tracking-widest">Liquidity</h3>
+              <div className="font-black font-display text-accent leading-none" style={{ fontSize: "clamp(3rem, 8vw, 6rem)", textShadow: '0 0 30px hsl(120 100% 50% / 0.6)' }}>BURNED</div>
+              <p className="mt-4 text-sm uppercase tracking-widest text-accent/60 font-bold">Forever Locked</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Roadmap Section */}
+      <section id="roadmap" className="py-32 relative overflow-hidden">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/15 blur-[150px] rounded-full pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-secondary/15 blur-[150px] rounded-full pointer-events-none" />
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-20">
+            <h2 className="text-6xl font-display font-bold text-glow-gold text-primary mb-6">The Quest Ahead</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">The wizard has consulted the ancient scrolls. The path to glory is written in gold.</p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Roadmap Image */}
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-primary/20 blur-[80px] rounded-full mix-blend-screen" />
+                <img
+                  src={roadmapImg}
+                  alt="BUBA Roadmap"
+                  data-testid="img-roadmap"
+                  className="w-full max-w-md object-contain drop-shadow-[0_0_60px_rgba(255,204,0,0.4)] relative z-10 rounded-2xl"
+                />
+              </div>
+            </motion.div>
+
+            {/* Roadmap Phases */}
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="flex flex-col gap-6">
+              {[
+                {
+                  phase: "Phase 1",
+                  title: "Summon the Wizard",
+                  items: ["Token launch on SUI", "Website goes live", "Community channels open", "Initial liquidity locked"],
+                  color: "primary",
+                  glow: "box-glow-gold",
+                  border: "border-primary/40",
+                  done: true,
+                },
+                {
+                  phase: "Phase 2",
+                  title: "Cast the Spell",
+                  items: ["CoinGecko & CMC listings", "Influencer partnerships", "Meme campaign unleashed", "1,000 holders milestone"],
+                  color: "secondary",
+                  glow: "box-glow-blue",
+                  border: "border-secondary/40",
+                  done: false,
+                },
+                {
+                  phase: "Phase 3",
+                  title: "Rule the Realm",
+                  items: ["CEX listings targeted", "BUBA merch drop", "10,000 holders milestone", "Community DAO formation"],
+                  color: "accent",
+                  glow: "",
+                  border: "border-accent/40",
+                  done: false,
+                },
+              ].map((phase) => (
+                <motion.div
+                  key={phase.phase}
+                  variants={fadeInUp}
+                  data-testid={`card-roadmap-${phase.phase.toLowerCase().replace(" ", "")}`}
+                  className={`p-6 rounded-2xl border ${phase.border} bg-card/40 backdrop-blur-md ${phase.glow} group hover:-translate-y-1 transition-transform duration-300`}
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <span className={`text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border ${phase.border} text-${phase.color}`}>
+                      {phase.phase}
+                    </span>
+                    {phase.done && (
+                      <span className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-primary/20 text-primary border border-primary/30">
+                        LIVE
+                      </span>
+                    )}
+                    <h3 className={`text-xl font-display font-bold text-${phase.color}`}>{phase.title}</h3>
+                  </div>
+                  <ul className="grid grid-cols-2 gap-2">
+                    {phase.items.map((item) => (
+                      <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <span className={`w-1.5 h-1.5 rounded-full bg-${phase.color} flex-shrink-0`} />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </div>
