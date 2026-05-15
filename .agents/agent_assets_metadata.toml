@@ -36,3 +36,9 @@ id = "Il_bdrF39T0no5Gnwk4o6"
 uri = "file://buba-deploy.zip"
 type = "unspecified"
 title = "BUBA — Ready to Deploy"
+
+[[outputs]]
+id = "cKf2_6_UHhY24sYOhJryn"
+uri = "file://buba-whitepaper.zip"
+type = "unspecified"
+title = "BUBA Token — Official Whitepaper"
